@@ -108,7 +108,10 @@ b. Az utasítás végrehajtásával együtt jelenjen meg a végrehajtási terv i
 c. Az utasítást adja meg válaszként!  
 
 ```js
-
+PROFILE
+MATCH (p:Person)
+WHERE p.born >=1980 AND p.born <= 2000
+RETURN p.name, p.born
 ```
 
 10\.  Indítsa el a Neo4J Desktop programot, majd a New gombnál válassza az Import Sample Project lehetőséget!
